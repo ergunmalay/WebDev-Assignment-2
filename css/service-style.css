@@ -1,0 +1,227 @@
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f8f7f5;
+}
+    
+/* Banner Styles */
+.banner img {
+    height: 450px;
+    width: 100%;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 768px) {
+    .banner img {
+        height: auto;
+    }
+}
+
+/* Button Styles */
+.button {
+    background-color: #d9d9d9;
+    border: #d9d9d9;
+    color: black;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+    bottom: 0;
+    margin-top: 5px;
+}
+
+.button:hover,
+.button:active {
+    background-color: #bfbfbf;
+    border: #bfbfbf;
+}
+
+
+/* Header Styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 5px;
+}
+
+.header img {
+    height: 50%;
+    width: 50%;
+    object-fit: cover;
+}
+
+/* Navigation Styles */
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: black;
+    background-color: lightgray;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    font-size: 3vw;
+    width: 100%;
+    text-align: center;
+}
+
+/* CAHNGE ONLY the background colour for flex box 2 */
+.nav a:nth-child(2) {
+    background-color: #f8f7f5;;
+}
+
+.nav a:hover {
+    background-color: #bfbfbf;
+}
+
+/* Display Container Styles */
+.display-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 10px;
+    margin: 5px;
+}
+
+.display-container h1 {
+    border-bottom: 1px solid black;
+    width: 100%;
+}
+
+/* Flex Item Styles */
+.flex-item-about,
+.flex-item-service {
+    margin-right: 10px;
+    flex: 1;
+    width: 100%;
+    overflow: auto;
+}
+
+@media (min-width: 768px) {
+    .flex-item-about,
+    .flex-item-service {
+        flex: 1.5;
+        height: 45%;
+    }
+
+    .flex-item-service {
+        flex: 2;
+    }
+}
+
+/* Content Styles */
+.content {
+    padding: 20px;
+}
+
+/* Table Styles */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,
+td {
+    text-align: left;
+    padding: 15px;
+    border-bottom: 3px solid #ddd;
+    position: relative;
+    top: 0;
+}
+
+/* table buttons */
+table button {
+    background-color: #d9d9d9;
+    border: 1px solid black;
+    color: black;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+    margin-top: 5px;
+    border-radius: 10px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Box Sizing Styles */
+* {
+    box-sizing: border-box;
+}
+
+/* Footer Styles */
+footer {
+    border-top: 1px solid black;
+    padding: 10px;
+}
+
+/* Media Query Styles */
+@media (max-width: 600px) {
+    .display-container {
+        flex-direction: column;
+    }
+}
+/* BEGIN: Additional Styles for Larger Screens */
+@media (min-width: 1200px) {
+    /* Banner Styles */
+    .banner img {
+        height: 600px;
+    }
+
+    /* Navigation Styles */
+    .nav a {
+        font-size: 2vw;
+    }
+
+    /* Flex Item Styles */
+    .flex-item-about,
+    .flex-item-service {
+        height: 50%;
+    }
+}
+
+/* BEGIN: Additional Styles for Smaller Screens */
+@media (max-width: 320px) {
+    /* Banner Styles */
+    .banner img {
+        height: 300px;
+    }
+
+    /* Navigation Styles */
+    .nav a {
+        font-size: 4vw;
+    }
+
+    /* Flex Item Styles */
+    .flex-item-about,
+    .flex-item-service {
+        height: 40%;
+    }
+}
+/* END: Additional Styles for Larger and Smaller Screens */
