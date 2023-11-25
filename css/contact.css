@@ -71,6 +71,7 @@ body {
     color: black;
     background-color: lightgray;
     border: 1px solid black;
+    border-bottom: none;
     padding: 1vw 10vw;
     font-size: 3vw;
     width: 100%;
@@ -277,5 +278,10 @@ footer {
     .flex-item-about,
     .flex-item-service {
         height: 40%;
+    }
+
+    .header img {
+        height: 50%;
+        width: 50%;
     }
 }
